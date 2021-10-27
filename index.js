@@ -62,7 +62,9 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
     res.send('hello pino hi')
 })
-
+app.get('/hello', (req, res) => {
+    res.send('hello again')
+})
 app.listen(port, () => {
     console.log('here me', port)
 })
